@@ -1,0 +1,1215 @@
+.fl-builder-content {
+	.fl-row-fixed-width {
+		max-width: 1440px;
+		max-width: rem(1440px);
+		width: 95%;
+	}
+
+	.fl-row-content {
+		@include breakpoint($mobile) {
+			max-width: 400px;
+		}
+	}
+}
+
+.fl-module {
+	.fl-module-content {
+		margin: 0;
+	}
+}
+
+.fl-module-button {
+	.fl-module-content {
+		.fl-button {
+			background: $orange;
+			color: $white;
+			text-transform: uppercase;
+			font-weight: 400;
+			min-width: 249px;
+			min-width: rem(249px);
+			padding: 24px 40px !important;
+			padding: rem(24px 40px) !important;
+			.fl-button-text {
+				color: $white;
+				text-transform: capitalize;
+			    font-weight: 400;
+			    font-size: 24px;
+			    font-size: rem(24px);
+			}
+			&:hover {
+				background: $orange;
+				color: $white;
+				text-transform: uppercase;
+				font-weight: 400;
+				min-width: 249px;
+				min-width: rem(249px);
+				padding: 24px 40px !important;
+				padding: rem(24px 40px) !important;
+				.fl-button-text {
+					color: $white;
+					text-transform: capitalize;
+				    font-weight: 400;
+				    font-size: 24px;
+				    font-size: rem(24px);
+				}
+			}
+		}
+	}
+}
+
+body .uabb-menu-close-btn {
+	color: $white;
+}
+
+.header-row {
+	.fl-row-content-wrap {
+		padding: 27px 0 26px; 
+		padding: rem(27px 0 26px);
+	}
+
+	.fl-module-button {
+		.fl-module-content {
+			.fl-button {
+				@include breakpoint($tabletpor) {
+				padding: 10px !important;
+				font-size: 12px !important;
+				min-width: 100%;
+					&:hover {
+						padding: 10px !important;
+						font-size: 12px !important;
+						min-width: 100%;
+					}
+				}
+				&:hover {
+					.fl-button-text {
+						color: $white;
+						text-transform: uppercase;
+					    font-weight: 400;
+					    font-size: 20px;
+					    font-size: rem(20px);
+					}
+				}
+				.fl-button-text {
+					color: $white;
+					text-transform: uppercase;
+				    font-weight: 400;
+				    font-size: 20px;
+				    font-size: rem(20px);
+				}
+			}
+		}
+	}
+
+	.fl-module-uabb-advanced-menu {
+		@include breakpoint($mobile) {
+			position: absolute;
+		    top: 0;
+		    right: 0;
+		    width: 11% !important;
+		}
+		.fl-module-content {
+			@include breakpoint($desk) {
+				margin-right: 32px;
+				margin-right: rem(32px);
+			}
+		}
+		.uabb-creative-menu .menu a {
+			font-size: 20px;
+			font-size: rem(20px);
+			font-weight: 400;
+		}
+
+		.uabb-creative-menu.uabb-menu-default .menu > li > a, 
+		.uabb-creative-menu.uabb-menu-default .menu > li > 
+		.uabb-has-submenu-container > a {
+			padding: 10px 19px;
+			padding: rem(10px 19px);
+		}
+
+		.uabb-creative-menu .menu.uabb-creative-menu-horizontal > li > a span.uabb-menu-toggle, 
+		.uabb-creative-menu .menu.uabb-creative-menu-horizontal > li > .uabb-has-submenu-container a span.uabb-menu-toggle {
+			padding-left: 17px;
+			padding-left: rem(17px);
+		}
+	}
+
+	.fl-module-icon {
+		@include breakpoint($abovetablet) {
+			position: absolute;
+		    top: -28px;
+		    top: rem(-28px);
+		    right: 0;
+		    left: 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		}
+		@include breakpoint($mobiletab) {
+			.fl-icon-text {
+				height: 20px;
+			}
+		}
+		.fl-module-content {
+			.fl-icon-text {
+				span {
+					display: inline-block;
+				}
+				.fl-icon-text-link {
+					p {
+						font-size: 12px;
+						font-size: rem(12px);
+    					font-weight: 300;
+					}
+				}
+			}
+		}
+		.fl-icon i, 
+		.fl-icon i:before {
+			font-size: 17px;
+			font-size: rem(17px);
+		}
+	}
+
+	.fl-module-photo {
+		.fl-module-content {
+			margin-left: 11px;
+			margin-left: rem(11px);
+		}
+	}
+
+	@include breakpoint($abovemobile) {
+		.fl-col {
+			.fl-col-content {
+				position: relative;
+			}
+		}
+	}
+
+	@include breakpoint($mobile) {
+		.uabb-creative-menu-mobile-toggle.hamburger .uabb-svg-container, 
+		.uabb-creative-menu-mobile-toggle.hamburger-label .uabb-svg-container {
+			width: 20px;
+			height: 20px;
+		}
+
+		.fl-button-wrap {
+			text-align: center;
+		}
+	}
+
+}
+
+.hero-row {
+	.fl-row-content-wrap {
+		padding: 139px 0 174px;
+		padding: rem(139px 0 174px);
+		@include breakpoint($mobile) {
+			padding: 50px 0;
+		}
+	}
+	@include breakpoint($mobile) {
+		.fl-row-content {
+			text-align: center;
+		}
+		.fl-button-wrap {
+			text-align: center;
+		}
+	}
+
+	.fl-row-content {
+		@include breakpoint($abovemobile) {
+			position: relative;
+			&:before {
+				content: ' ';
+			    height: 585px;
+			    width: 584px;
+				height: rem(585px);
+			    width: rem(584px);
+			    border: 23px solid rgba(255, 255, 255, 0.06);
+			    border: rem(23px) solid rgba(255, 255, 255, 0.06);
+			    position: absolute;
+				top: -74px;
+	    		left: 51px;
+	    		top: rem(-74px);
+	    		left: rem(51px);
+				z-index: -1;
+			}
+		}
+	}
+
+	.h1 {
+		.fl-module-content {
+			margin-bottom: 43px;
+			margin-bottom: rem(43px);
+			.fl-heading {
+				font-weight: 700;
+				line-height: 88px;
+				line-height: rem(88px);
+				@include breakpoint($mobile) {
+					line-height: 1;
+				}
+			}
+		}
+	}
+
+	.h2 {
+		.fl-module-content {
+			margin-bottom: 11px;
+			margin-bottom: rem(11px);
+			.fl-heading {
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.h3 {
+		.fl-module-content {
+			margin-bottom: 49px;
+			margin-bottom: rem(49px);
+			.fl-heading {
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+.about-row {
+	.fl-row-content-wrap {
+		padding: 155px 0 156px;
+		padding: rem(155px 0 156px);
+		@include breakpoint($mobile) {
+			padding: 50px 0;
+		}
+	}
+
+	.fl-row-content {
+		@include breakpoint($abovemobile) {
+			position: relative;
+			&:before {
+				content: ' ';
+			    width: 391px;
+			    height: 198px;
+				width: rem(391px);
+			    height: rem(198px);
+			    border: 23px solid rgba(0, 0, 0, 0.06);
+			    border: rem(23px) solid rgba(0, 0, 0, 0.06);
+			    position: absolute;
+				top: -69px;
+	    		left: 51px;
+	    		top: rem(-69px);
+	    		left: rem(51px);
+				//z-index: -1;
+			}
+
+			.fl-col-group {
+				position: relative;
+			}
+		}
+	}
+
+	@include breakpoint($mobile) {
+		.fl-row-content {
+			text-align: center;
+		}
+		.fl-button-wrap {
+			text-align: center;
+		}
+	}
+
+	@include breakpoint($portrait) {
+		.fl-col {
+			&:last-of-type {
+				.fl-col-content {
+					padding-left: 30px;
+					padding-left: rem(30px);
+				}
+			}
+		}
+	}
+
+	.fl-module-heading {
+		.fl-module-content {
+			margin-bottom: 92px;
+			margin-bottom: rem(92px);
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		.fl-heading {
+			font-size: 52px;
+			font-size: rem(52px);
+			text-transform: uppercase;
+			font-weight: 700;
+			@include breakpoint($mobile) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	p {
+		font-size: 24px;
+		font-size: rem(24px);
+		font-weight: 400;
+		line-height: 48px;
+		line-height: rem(48px);
+		margin-bottom: 31px;
+		margin-bottom: rem(31px);
+	}
+
+	.form-module {
+		.fl-module-content {
+			max-width: 614px;
+			max-width: rem(614px);
+			width: 100%;
+    		float: right;
+    		-webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.21);
+			-moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.21);
+			box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.21);
+			padding-bottom: 44px;
+			padding-bottom: rem(44px);
+			background: $white;
+			@include breakpoint($abovetablet) {
+				margin-top: -260px;
+				margin-top: rem(-260px);
+			}
+		}
+
+		.forminator-response-message {
+			ul {
+				li {
+					color: red !important;
+				}
+			}
+
+			p {
+				color: red !important;
+			}
+		}
+
+		.forminator-error-message {
+			color: red !important;
+		}
+		h3 {
+			color: $white;
+			background-color: $blackgray;
+			font-size: 36px;
+			font-size: rem(36px);
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			padding: 29px 5px;
+			padding: rem(29px 5px);
+			margin-bottom: 59px;
+			margin-bottom: rem(59px);
+		}
+
+		.forminator-ui {
+			padding: 0 43px;
+			padding: rem(0 43px);
+			@include breakpoint($mobile) {
+				padding: 0;
+			}
+		}
+
+		.forminator-input,
+		.forminator-textarea {
+			text-align: left !important;
+			font-size: 16px !important;
+			font-size: rem(16px) !important;
+			font-weight: 200 !important;
+			border: 1px solid $graylight !important;
+			border-radius: 0 !important;
+			width: 100% !important;
+			min-width: 100% !important;
+			padding: 17px 21px !important;
+			padding: rem(17px 21px) !important;
+			font-weight: 400 !important;
+		}
+
+		.forminator-textarea {
+		    height: 297px !important;
+		    height: rem(297px) !important;
+		}
+
+		.forminator-row {
+			margin-bottom: 20px !important;
+			margin-bottom: rem(20px) !important;
+			padding: 0 15px;
+			padding: rem(0 15px);
+			.forminator-description {
+				display: none;
+			}
+		}
+
+		.et-db #et-boc .et_pb_module .forminator-ui.forminator-custom-form.forminator-design--default:not(.forminator-size--small):not(.forminator-enclosed):not(.forminator-custom) .forminator-row, .forminator-ui.forminator-custom-form.forminator-design--default:not(.forminator-size--small):not(.forminator-enclosed):not(.forminator-custom) .forminator-row {
+			margin: 0 !important;
+		}
+		.et-db #et-boc .et_pb_module .forminator-ui.forminator-custom-form.forminator-design--default:not(.forminator-size--small):not(.forminator-enclosed):not(.forminator-custom) .forminator-col, .forminator-ui.forminator-custom-form.forminator-design--default:not(.forminator-size--small):not(.forminator-enclosed):not(.forminator-custom) .forminator-col {
+			padding: 0;
+		}
+
+		.et-db #et-boc .et_pb_module .forminator-ui.forminator-custom-form.forminator-design--none:not(.forminator-size--small):not(.forminator-enclosed):not(.forminator-custom) .forminator-col, .forminator-ui.forminator-custom-form.forminator-design--none:not(.forminator-size--small):not(.forminator-enclosed):not(.forminator-custom) .forminator-col {
+			padding: 0 !important;
+		}
+
+		#submit {
+			margin-top: 30px;
+			margin-top: rem(30px);
+		}
+
+		.forminator-button {
+			font-size: 20px !important;
+			font-size: rem(20px) !important;
+			color: $white !important;
+			font-weight: 400 !important;
+			font-family: $font-stack-1;
+			width: 248px;
+			width: rem(248px);
+			padding: 23px 10px !important;
+			padding: rem(23px 10px) !important;
+		}
+	}
+}
+
+.services-row {
+	.fl-row-content-wrap {
+		padding: 152px 0 105px;
+		padding: rem(152px 0 105px);
+		@include breakpoint($mobile) {
+			padding: 50px 0;
+			background: $black;
+		}
+	}
+
+	@include breakpoint($abovemobile) {
+		.first-col {
+			.fl-col-content {
+				padding-right: 164px;
+				padding-right: rem(164px);
+			}
+		}
+	}
+
+	@include breakpoint($tablet) {
+		.first-col {
+			.fl-col-content {
+				padding-right: 30px;
+				padding-right: rem(30px);
+			}
+		}
+	}
+
+	@include breakpoint($mobile) {
+		.fl-row-content {
+			text-align: center;
+		}
+		.fl-button-wrap {
+			text-align: center;
+		}
+	}
+
+	.white-box-col > {
+		.fl-col-content {
+			@include breakpoint($desk) {
+				width: 911px;
+				width: rem(911px);
+				margin-left: -83px;
+	    		margin-top: -35px;
+	    		margin-left: rem(-83px);
+	    		margin-top: rem(-35px);
+    		}
+
+    		@include breakpoint($desk2) {
+    			width: 100%;
+    		}
+
+    		@include breakpoint($tabletpor) {
+	    		margin-left: 30px;
+	    		margin-left: rem(30px);
+    		}
+    		padding: 74px 74px 23px 36px;
+    		padding: rem(74px 74px 23px 36px);
+    		@include breakpoint($mobile) {
+    			padding: 20px;
+    		}
+		}
+	}
+	
+	.white-box-col {	
+		p {
+			line-height: 42px;
+	    	margin-top: -9px;
+	    	line-height: rem(42px);
+	    	margin-top: rem(-9px);
+    	}
+
+    	.fl-col-group {
+    		&:last-of-type {
+    			.fl-module-rich-text {
+	    			.fl-module-content {
+	    				margin-bottom: 0;
+	    			}
+	    		}
+    		}
+    	}
+    	.fl-module-rich-text {
+    		.fl-module-content {
+    			margin-bottom: 30px;
+    			margin-bottom: rem(30px);
+    			@include breakpoint($tabletpor) {
+    				padding-left: 15px;
+    				padding-left: rem(15px);
+    			}
+    		}
+    	}
+
+    	@include breakpoint($mobile) {
+    		.fl-module-photo {
+    			.fl-module-content {
+    				margin-bottom: 20px;
+    			}
+    		}
+    	}
+	}
+
+
+	.fl-module-heading {
+		.fl-module-content {
+			margin-bottom: 99px;
+			margin-bottom: rem(99px);
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		.fl-heading {
+			font-size: 52px;
+			font-size: rem(52px);
+			text-transform: uppercase;
+			font-weight: 700;
+			@include breakpoint($mobile) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	p {
+		font-size: 24px;
+		font-size: rem(24px);
+		font-weight: 400;
+		line-height: 48px;
+		line-height: rem(48px);
+		margin-bottom: 31px;
+		margin-bottom: rem(31px);
+	}
+
+}
+
+.client-row {
+	.fl-row-content-wrap {
+		padding: 227px 0 114px;
+		padding: rem(227px 0 114px);
+		@include breakpoint($mobile) {
+			padding: 50px 0;
+		}
+	}
+
+	.fl-module-post-grid {
+		.fl-module-content {
+			@include breakpoint($abovemobile) {
+				margin-top: -69px;
+				margin-top: rem(-69px);
+			}
+		}
+		.fl-post-text {
+			position: relative;
+			padding: 87px 45px 36px 57px;
+			padding: rem(87px 45px 36px 57px);
+			&:before {
+				content: '';
+			    display: block;
+			    height: 37px; 
+			    width: 40px; 
+			    //height: rem(37px); 
+			    //width: rem(40px); 
+			    position: absolute;
+			    top: 78px;
+    			left: 12px;
+    			top: rem(78px);
+    			left: rem(12px);
+			    background: url('./img/quote.png') no-repeat 0px 0px;
+			    @include breakpoint($tablet) {
+			    	top: 20px;
+			    	top: rem(20px);
+			    }
+			}
+		}
+		.fl-post-column {
+		    padding-bottom: 20px;
+		    padding-left: 10px;
+		    padding-right: 10px;
+			padding-bottom: rem(20px);
+		    padding-left: rem(10px);
+		    padding-right: rem(10px);
+		}
+		.fl-post-grid-post {
+			border: 0;
+			background: #ebebeb;
+			font-size: 20px;
+			font-size: rem(20px);
+			p {
+				font-size: 20px;
+				font-size: rem(20px);
+				line-height: 41px;
+				line-height: rem(41px);
+				margin-bottom: 48px;
+				margin-bottom: rem(48px);
+			}
+			h4 {
+				font-size: 24px;
+				font-size: rem(24px);
+				font-weight: 400;
+			}
+		}
+		@include breakpoint($mobile) {
+			.fl-post-grid {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+
+	@include breakpoint($mobile) {
+		.fl-row-content {
+			text-align: center;
+		}
+		.fl-button-wrap {
+			text-align: center;
+		}
+	}
+
+	@include breakpoint($abovemobile) {
+		.fl-col {
+			&:first-of-type {
+				.fl-col-content {
+					padding-right: 32px;
+					padding-right: rem(32px);
+				}
+			}
+		}
+	}
+
+	.fl-module-heading {
+		.fl-module-content {
+			margin-bottom: 106px;
+			margin-bottom: rem(106px);
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		.fl-heading {
+			font-size: 52px;
+			font-size: rem(52px);
+			text-transform: uppercase;
+			font-weight: 700;
+			@include breakpoint($mobile) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	p {
+		font-size: 24px;
+		font-size: rem(24px);
+		font-weight: 400;
+		line-height: 41px;
+		line-height: rem(41px);
+		margin-bottom: 31px;
+		margin-bottom: rem(31px);
+	}
+
+}
+
+.moving-row {
+	.fl-row-content-wrap {
+		padding: 109px 0 132px;
+		padding: rem(109px 0 132px);
+		@include breakpoint($mobile) {
+			padding: 50px 0;
+			background: $black;
+		}
+	}
+
+	.fl-row-content {
+		max-width: 1010px;
+		max-width: rem(1010px);
+	}
+
+	@include breakpoint($mobile) {
+		.fl-row-content {
+			text-align: center;
+		}
+		.fl-button-wrap {
+			text-align: center;
+		}
+	}
+
+	.fl-module-rich-text {
+		.fl-module-content {
+			margin-bottom: 36px;
+			margin-bottom: rem(36px);
+		}
+	}
+
+	.fl-module-heading {
+		.fl-module-content {
+			margin-bottom: 17px;
+			margin-bottom: rem(17px);
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		.fl-heading {
+			font-size: 52px;
+			font-size: rem(52px);
+			text-transform: uppercase;
+			font-weight: 700;
+			@include breakpoint($mobile) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	p {
+		font-size: 24px;
+		font-size: rem(24px);
+		font-weight: 400;
+		line-height: 41px;
+		line-height: rem(41px);
+		margin-bottom: 31px;
+		margin-bottom: rem(31px);
+	}
+
+}
+
+.learn-row {
+	.fl-row-content-wrap {
+		padding: 151px 0 187px;
+		padding: rem(151px 0 187px);
+		@include breakpoint($mobile) {
+			padding: 50px 0;
+		}
+	}
+
+	@include breakpoint($mobile) {
+		.fl-row-content {
+			text-align: center;
+		}
+		.fl-button-wrap {
+			text-align: center;
+		}
+	}
+
+	.fl-module-heading {
+		.fl-module-content {
+			margin-bottom: 44px;
+			margin-bottom: rem(44px);
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		.fl-heading {
+			font-size: 52px;
+			font-size: rem(52px);
+			text-transform: uppercase;
+			font-weight: 700;
+			@include breakpoint($mobile) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	p {
+		font-size: 24px;
+		font-size: rem(24px);
+		font-weight: 400;
+		line-height: 41px;
+		line-height: rem(41px);
+		margin-bottom: 40px;
+		margin-bottom: rem(40px);
+	}
+
+	.fl-module-photo .fl-module-content {
+		margin-top: 10px;
+		margin-top: rem(10px);
+		@include breakpoint($tabletpor) {
+			padding-left: 20px;
+			padding-left: rem(20px);
+		}
+		@include breakpoint($deskmed) {
+			padding-left: 20px;
+			padding-left: rem(20px);
+		}
+	}
+
+	.fl-module-accordion {
+
+		.fl-module-content {
+			margin-top: 165px;
+			margin-top: rem(165px);
+			@include breakpoint($mobile) {
+				margin-top: 50px;
+			}
+		}
+
+		.fl-accordion-button {
+			background: $white;
+			padding: 50px 38px;
+			padding: rem(50px 38px);
+			@include breakpoint($mobile) {
+				padding: 20px;
+			}
+		}
+
+		.fl-accordion-button-label {
+			font-size: 24px;
+			font-size: rem(24px);
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $grayblack;
+			&:focus {
+				outline: none;
+			}
+			@include breakpoint($mobile) {
+				font-size: 14px;
+				text-align: left;
+			}
+		}
+
+		.fl-accordion-button-icon {
+			font-size: 36px;
+			padding-right: 30px;
+			font-size: rem(36px);
+			padding-right: rem(30px);
+			opacity: 1;
+			&:before {
+				color: $grayblack;
+				opacity: 1;
+			}
+		}
+
+		.fl-accordion-content {
+			padding: 20px;
+			padding: rem(20px);
+		}
+
+		.fl-accordion-item {
+			border: 0;
+			.fl-accordion-button {
+				border-bottom: 1px solid #ebebeb;
+			}
+			&:last-of-type {
+				.fl-accordion-button {
+					border-bottom: 0;
+				}
+			}
+		}
+
+	}
+
+}
+
+.sub-footer {
+	.fl-row-content-wrap {
+		padding: 105px 0 95px;
+		padding: rem(105px 0 95px);
+	}
+
+	@include breakpoint($mobile) {
+		.fl-row-content {
+			text-align: center;
+		}
+		.fl-button-wrap {
+			text-align: center;
+		}
+		.fl-photo,
+		.fl-icon-group-left,
+		.fl-module.fl-module-heading .fl-heading {
+			text-align: center;
+		}
+
+		.fl-icon-wrap {
+		    display: block;
+		    text-align: center;
+		    max-width: 208px;
+		    max-width: rem(208px);
+		    margin: 0 auto;
+		}
+
+		.fl-module-icon {
+			&:last-of-type {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.footer-logo {
+		.fl-module-content {
+			margin-bottom: 15px;
+			margin-bottom: rem(15px);
+		}
+	}
+
+	p {
+		font-size: 16px;
+		font-size: rem(16px);
+		font-weight: 400;
+		line-height: 20px;
+		line-height: rem(20px);
+		margin-bottom: 14px;
+		margin-bottom: rem(14px);
+	}
+
+	@include breakpoint($tabletpor) {
+		.fl-col {
+			.fl-col-content {
+				padding: 20px;
+				padding: rem(20px);
+			}
+		}
+	}
+
+	.sub-col1 {
+		.fl-col-content {
+			padding-right: 81px;
+			@include breakpoint($tabletpor) {
+				padding: 20px;
+				padding: rem(20px);
+			}
+			@include breakpoint($mobile) {
+				padding: 0;
+			}
+		}
+	}
+
+	.fl-module-content .fl-icon i,
+	.fl-module-content .fl-icon i:before {
+		font-size: 24px;
+		font-size: rem(24px);
+	}
+
+	.fl-module-icon-group {
+		.fl-module-content {
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		.fl-icon {
+			border: 2px solid #ffffff;
+			border: rem(2px) solid #ffffff;
+		    border-radius: 50%;
+		    width: 41px;
+		    height: 41px;
+		    width: rem(41px);
+		    height: rem(41px);
+		    display: inline-flex;
+		    align-items: center;
+		    justify-content: space-around;
+		    box-sizing: border-box;
+		    margin-right: 8px;
+		    margin-right: rem(8px);
+		    &:last-of-type {
+		    	margin-right: 0;
+		    }
+		}
+	}
+
+	.fl-module-heading {
+		.fl-module-content {
+			margin-bottom: 15px;
+			margin-bottom: rem(15px);
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+			.fl-heading {
+				font-weight: 700;
+				font-size: 28px;
+				font-size: rem(28px);
+				line-height: 23px;
+				line-height: rem(23px);
+				@include breakpoint($tabletpor) {
+					line-height: 1;
+				}
+			}
+		}
+	}
+
+	.fl-module-icon {
+		.fl-icon-text {
+			font-size: 24px;
+			font-size: rem(24px);
+			font-weight: 400;
+			padding-left: 12px;
+			padding-left: rem(12px);
+			height: 41.5px;
+			height: rem(41.5px);
+			a {
+				p {
+					font-size: 24px;
+					font-size: rem(24px);
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	.sub-col3 {
+		.fl-module-content .fl-icon i:before {
+			font-size: 34px;
+			font-size: rem(34px);
+			margin-left: -9px;
+			margin-left: rem(-9px);
+		}
+
+		.fl-module-icon .fl-icon-text {
+			padding-left: 9px;
+			padding-left: rem(9px);
+		}
+	}
+
+	.uabb-photo-gallery .uabb-photo-gallery-content .uabb-gallery-img, 
+	.uabb-masonary-content .uabb-photo-gallery-content .uabb-gallery-img {
+		min-height: 117px;
+		min-height: rem(117px);
+    	object-fit: cover;
+	}
+
+	.fl-module-photo-gallery {
+		.fl-module-content {
+			margin-top: 9px;
+			margin-top: rem(9px);
+		}
+		.uabb-photo-gallery-item {
+			padding: 7.5px 7.5px 22.5px;
+			padding: rem(7.5px 7.5px 22.5px);
+		}
+	}
+}
+
+.copyright-row {
+	.fl-row-content-wrap {
+		padding: 65px 0;
+		padding: rem(65px 0);
+	}
+	p {
+		font-size: 20px;
+		font-size: rem(20px);
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+}
+
+.thank-row {
+	.fl-row-content-wrap {
+		padding: 289px 0 293px;
+		padding: rem(289px 0 293px);
+		@include breakpoint($mobile) {
+			padding: 50px 0;
+			background: $black;
+		}
+	}
+
+	.fl-row-content {
+		max-width: 1010px;
+		max-width: rem(1010px);
+		@include breakpoint($abovemobile) {
+			position: relative;
+			&:before {
+				content: ' ';
+			    height: 585px;
+			    width: 588px;
+				height: rem(585px);
+			    width: rem(588px);
+			    border: 23px solid rgba(255, 255, 255, 0.06);
+			    border: rem(23px) solid rgba(255, 255, 255, 0.06);
+			    position: absolute;
+				top: -161px;
+	    		left: 0;
+	    		right: 0;
+	    		top: rem(-161px);
+	    		margin-left: auto;
+	    		margin-right: auto;
+	    		display: block;
+				z-index: -1;
+			}
+		}
+	}
+
+	@include breakpoint($mobile) {
+		.fl-row-content {
+			text-align: center;
+		}
+		.fl-button-wrap {
+			text-align: center;
+		}
+	}
+
+	.fl-module-rich-text {
+		.fl-module-content {
+			margin-bottom: 36px;
+			margin-bottom: rem(36px);
+		}
+	}
+
+	.h1 {
+		.fl-module-content {
+			margin-bottom: 6px;
+			margin-bottom: rem(6px);
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		.fl-heading {
+			font-size: 36px;
+			font-size: rem(36px);
+			font-weight: 500;
+			@include breakpoint($mobile) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.h2 {
+		.fl-module-content {
+			margin-bottom: 43px;
+			margin-bottom: rem(43px);
+			@include breakpoint($mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		.fl-heading {
+			font-size: 68px;
+			font-size: rem(68px);
+			font-weight: 700;
+			@include breakpoint($mobile) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	p {
+		font-size: 24px;
+		font-size: rem(24px);
+		font-weight: 400;
+		line-height: 41px;
+		line-height: rem(41px);
+		margin-bottom: 31px;
+		margin-bottom: rem(31px);
+	}
+
+}
+
+.forminator-input,
+.forminator-textarea {
+    all: inherit !important;
+}

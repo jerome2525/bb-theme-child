@@ -1,0 +1,55 @@
+//@include font-face("GibsonBold", font-files("gibson-bold.ttf"));
+//@include font-face("GibsonRegular", font-files("Gibson-Regular.ttf"));
+//@include font-face("GibsonSemiBold", font-files("Gibson-SemiBold.otf"));
+//@include font-face("GibsonBoldItalic", font-files("Gibson-BoldItalic.ttf"));
+//@include font-face("GibsonRegularItalic", font-files("Gibson-RegularItalic.ttf"));
+//@include font-face("MyriadProRegular", font-files("MyriadPro-Regular.otf"));
+
+$red: #E1261C;
+$blue: #337ab7;
+$gray: #f5f5f5;
+$grayblack: #201711;
+$graylight: #cccccc;
+$black: #000000;
+$blackgray: #2d2d2d;
+$gold: #ffb000;
+$white: #ffffff;
+$green: #69804e;
+$orange: #ffb000;
+
+/* Fonts
+---------------------------------------- */
+$font-stack-1: 'Montserrat', Arial, sans-serif;
+
+/* Susy
+---------------------------------------- */
+
+$susy: (
+        columns: 12,
+        gutters: .25,
+        math: fluid,
+        output: float,
+);
+
+@include breakpoint-set('default feature', 'max-width');
+
+@include border-box-sizing;
+
+$desk: min-width 1280px;
+$desk2: 1280px 1365px;
+$deskmed: 1280px 1679px;
+$portrait: 1024px 1279px;
+$tabletpor: 768px 1279px;
+$abovetablet: min-width 1023px;
+$tablet: 768px 1023px;
+$abovemobile: min-width 768px;
+$mobiletabpor: max-width 1279px;
+$mobiletab: max-width 1023px;
+$mobile: max-width 767px;
+$smallmobile: max-width 320px;
+
+
+
+
+
+
